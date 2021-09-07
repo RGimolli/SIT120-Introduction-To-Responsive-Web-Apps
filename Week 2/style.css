@@ -1,0 +1,48 @@
+body {
+  background-color: turquoise;
+}
+
+h1 {
+
+  color: black;
+  text-align: center;
+  display: block;
+
+}
+
+ul {
+    background-color: black;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+li {
+    display:inline;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+<style>div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+
+table {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: left;
+}
+
+iframe {
+  text-align: right;
+}
