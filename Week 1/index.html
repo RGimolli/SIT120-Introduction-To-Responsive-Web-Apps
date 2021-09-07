@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rinor's Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="form.js">
+ </script>
+ <section id='app'>
+   <h1>{{title}}</h1>
+   <div v-for="todoItem in todoLists">
+     <input class="check-lists"
+            type="checkbox"
+            v-on:change="toggleItem(todoItem)"
+            v-bind:checked="todoItem.checked"
+    
+
+
+</head>
+<body>
+  <h1 align="center">
+    Website 1
+  </h1>
+
+  <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <img src="images/space.jpg" alt="SPACE" style="width:190px;height:200px;">
+
+  <h2 align="left">
+    Welcome!
+  </h2>
+
+  <p class="first_p"></p> Hello Welcome to my very first webpage! More content to come.
+  </p>
