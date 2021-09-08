@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">      <!-- i may use this in order to create a heading for my webpage -->
+  {{ message }}
+</div>
+
+  <script>
+    var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Tech21'
+  }
+})
+  </script>
+
+  <div id="app-4">     <!-- may use this to create a custom list of things i will be talking about-->
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+
+  <script>
+    var app4 = new Vue({
+      el: '#app-4',
+      data: {
+        todos: [
+          { text: '5G Data' },
+          { text: 'Drones' },
+          { text: 'Playstation 5' }
+        ]
+      }
+    })
+    </script>
