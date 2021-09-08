@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rinor's Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="form.js">
+ </script>
+ <script src="https://unpkg.com/vue"></script>
+ <section id='app'>
+</head>
+<body>
+  <h1 align="center">
+    Website 1
+  </h1>
+
+  <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <img src="images/space.jpg" alt="SPACE" style="width:190px;height:200px;">
+
+  <h2 align="left">
+    Welcome!
+  </h2>
+
+  <p class="first_p"></p> Hello Welcome to my very first webpage! More content to come.
+
+  <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+<h2>Table of technology</h2>
+
+    <table style="width:100%">
+      <tr>
+        <th>Handheld</th>
+        <th>Non-Handheld</th>
+      </tr>
+      <tr>
+        <td>Mobile Phone</td>
+        <td>Desktop</td>
+      </tr>
+      <tr>
+        <td>Laptop</td>
+        <td>Television</td>
+      </tr>
+      <tr>
+        <td>Tablet</td>
+        <td>Console</td>
+      </tr>
+    </table>
+
+
+    <h2>Current time</h2>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+      Display date and time</button>
+
+    <p id="demo"></p>
+
+    <iframe width="420" height="345" src="https://www.youtube.com/watch?v=EepDX_P28ic">
+    </iframe>
+
+    <div id="app">   <!-- the following codes are meant to be seperate -->
+    {{ message }}    <!-- therefore, copy and past each section seperately -->
+  </div>
+
+    <script>
+      var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Welcome to my Webpage!'
+    }
+  })
+    </script>
+  <!--end of first function -->
+
+  <div id="app-2">
+    <span v-bind:title="message">
+      Hover your mouse this message for a few seconds
+      to see when you first accessed this site!
+    </span>
+  </div>
+
+  <script>
+  var app2 = new Vue({
+    el: '#app-2',
+    data: {
+      message: 'This page was loaded on ' + new Date().toLocaleString()
+    }
+  })
+  </script>
+  <!--end of second function -->
+
+  <div id="app-3">
+    <span v-if="seen">Magic trick</span>
+  </div>
+
+  <script>
+    var app3 = new Vue({
+    el: '#app-3',
+    data: {
+      seen: true
+    }
+  })
+  </script>
+
+  <!--end of third function -->
+
+  <div id="app-4">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+
+  <script>
+    var app4 = new Vue({
+      el: '#app-4',
+      data: {
+        todos: [
+          { text: 'First line' },
+          { text: 'Second line' },
+          { text: 'Third line' }
+        ]
+      }
+    })
+    </script>
+  <!--end of fourth function -->
+
+</body>
+</html>
