@@ -1,0 +1,99 @@
+.demo {
+  font-family: sans-serif;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  padding: 20px 30px;
+  margin-top: 1em;
+  margin-bottom: 40px;
+  user-select: none;
+  overflow-x: auto;
+}
+
+/* styling for heading */
+h1 {
+  font-family: Verdana, serif;
+  color: red;
+}
+
+/* styling for body */
+body {
+  margin: 0;
+  font-family: Verdana, serif;
+}
+
+/* styling for heading 2 */
+h2 {
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* styling for menu */
+ul {
+    background-color: black;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+/* styling for menu */
+li {
+    display:inline;
+}
+
+/* styling for menu */
+a {
+    font-size: 25px;
+    display:inline-block;
+    padding: 19px;
+    color: red;
+    text-decoration: none;
+}
+
+/* styling for paragraph */
+p {
+  font-family: Verdana, serif;
+  width: 60%;
+  color: black;
+  font-size: 16px;
+  text-align:left;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  border: 3px;
+  margin: auto;
+}
+
+/* styling for home page paragraph */
+.topic_one {
+  font-family: Verdana, serif;
+  width: 60%;
+  color: black;
+  font-size: 16px;
+  text-align:center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border: 3px;
+  margin: auto;
+}
+
+/* styling for contact */
+.contact-form {
+    display: block;
+    padding: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* styling for footing */
+.footer {
+    width: 100%;
+    color: black;
+    font-size: 9px;
+    text-align:center;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
