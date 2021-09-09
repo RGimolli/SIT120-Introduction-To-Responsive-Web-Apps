@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rinor's Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ <section id='app'>
+</head>
+<body>
+  <h1 align="center">
+    Website 1
+  </h1>
+
+  <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div id="app">
+        <input type="checkbox" id="checkbox" v-model="checked" />
+        <label for="checkbox">Task 1</label>
+      </div>
+      <script src="src/index.js"></script>
+
+  <h2 align="left">
+    Welcome!
+  </h2>
+
+  <p class="first_p"></p> Hello Welcome to my very first webpage! More content to come.
+
+  <div id="v-model-multiple-checkboxes" class="demo">
+  <input type="checkbox" id="5G" value="5G" v-model="checkedNames" />
+  <label for="5G">5G</label>
+  <input type="checkbox" id="Drones" value="Drones" v-model="checkedNames" />
+  <label for="Drones">Drones</label>
+  <input type="checkbox" id="RTX" value="RTX" v-model="checkedNames" />
+  <label for="RTX">RTX</label>
+  <br />
+
+</div>
+
+<div id="v-model-select-dynamic" class="demo">
+  <select v-model="selected">
+    <option v-for="option in options" v-bind:value="option.value">
+      5G
+    </option>
+  </select>
+  <span>Selected:</span>
+</div>
+
+
+
+
+    <p id="demo"></p>
+
+
+
+</body>
+</html>
